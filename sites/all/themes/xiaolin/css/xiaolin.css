@@ -1,0 +1,37 @@
+/**
+ * @file Custom Styling
+ */
+ 
+/*
+ * Body
+ */
+#page {
+  background: #b9d449;
+}
+
+#search .search-input {
+  width: 190px;
+  height: 24px;
+  padding: 2px;
+  border: 1px solid #b7d041;
+  background: #e2e4bc;
+}
+
+#content-area {
+  background: #eae5d2;
+  border: 1px solid #88a527;
+  margin: 0 30px 30px 0;
+}
+
+#footer_partner {
+  background: #88a728;
+  height: 128px;
+}
+
+#footer {
+  background: #3b291b;
+  height: 32px;
+  color: #b8d046;
+  text-align: center;
+  line-height: 32px;
+}
