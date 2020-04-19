@@ -36,10 +36,10 @@
  * @see template_preprocess_comment_wrapper()
  */
 ?>
-<div id="comments" class="<?php print $classes; ?>">
-  <?php if ($node->type != 'forum'): ?>
-    <h2 class="title"><?php print t('Comments'); ?></h2>
-  <?php endif; ?>
+<div id="comments" class="<?php echo $classes; ?>">
+  <?php if ($node->type != 'forum') { ?>
+    <h2 class="title"><?php echo t('Comments'); ?></h2>
+  <?php } ?>
 
-  <?php print $content; ?>
+  <?php echo $content; ?>
 </div>
