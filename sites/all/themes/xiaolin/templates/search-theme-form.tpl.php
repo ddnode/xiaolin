@@ -33,7 +33,7 @@
  */
 ?>
 <span id="search" class="container-inline">
-  <input class="search-input form-text" type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-header"  size="15" value="Enter your search here..." onfocus="if (this.value == 'Enter your search here...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter your search here...';}" title="<?php print t('Enter search terms') ?>" />
-  <input id="search_header" class="search_submit" type="submit" name="op" value="<?php print t('Search') ?>"  />
-  <?php print $search['hidden']; ?>
+  <input class="search-input form-text" type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-header"  size="15" value="Enter your search here..." onfocus="if (this.value == 'Enter your search here...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter your search here...';}" title="<?php echo t('Enter search terms') ?>" />
+  <input id="search_header" class="search_submit" type="submit" name="op" value="<?php echo t('Search') ?>"  />
+  <?php echo $search['hidden']; ?>
 </span>

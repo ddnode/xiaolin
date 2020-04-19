@@ -43,7 +43,7 @@
  */
 
 /**
- * Database settings:
+ * Database settings:.
  *
  * Note that the $db_url variable gets parsed using PHP's built-in
  * URL parser (i.e. using the "parse_url()" function) so make sure
@@ -109,10 +109,10 @@ $db_prefix = '';
  *
  * @see http://drupal.org/node/772678
  */
-# $db_collation = 'utf8_general_ci';
+// $db_collation = 'utf8_general_ci';
 
 /**
- * Access control for update.php script
+ * Access control for update.php script.
  *
  * If you are updating your Drupal installation using the update.php script
  * being not logged in as administrator, you will need to modify the access
@@ -120,7 +120,7 @@ $db_prefix = '';
  * check. After finishing the upgrade, be sure to open this file again
  * and change the TRUE back to a FALSE!
  */
-$update_free_access = FALSE;
+$update_free_access = false;
 
 /**
  * Base URL (optional).
@@ -141,10 +141,10 @@ $update_free_access = FALSE;
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-# $base_url = 'http://www.example.com';  // NO trailing slash!
+// $base_url = 'http://www.example.com';  // NO trailing slash!
 
 /**
- * PHP settings:
+ * PHP settings:.
  *
  * To see what PHP settings are possible, including whether they can
  * be set at runtime (ie., when ini_set() occurs), read the PHP
@@ -153,18 +153,18 @@ $update_free_access = FALSE;
  * settings are used there. Settings defined here should not be
  * duplicated there so as to avoid conflict issues.
  */
-ini_set('arg_separator.output',     '&amp;');
-ini_set('magic_quotes_runtime',     0);
-ini_set('magic_quotes_sybase',      0);
-ini_set('session.cache_expire',     200000);
-ini_set('session.cache_limiter',    'none');
-ini_set('session.cookie_lifetime',  2000000);
-ini_set('session.gc_maxlifetime',   200000);
-ini_set('session.save_handler',     'user');
-ini_set('session.use_cookies',      1);
+ini_set('arg_separator.output', '&amp;');
+ini_set('magic_quotes_runtime', 0);
+ini_set('magic_quotes_sybase', 0);
+ini_set('session.cache_expire', 200000);
+ini_set('session.cache_limiter', 'none');
+ini_set('session.cookie_lifetime', 2000000);
+ini_set('session.gc_maxlifetime', 200000);
+ini_set('session.save_handler', 'user');
+ini_set('session.use_cookies', 1);
 ini_set('session.use_only_cookies', 1);
-ini_set('session.use_trans_sid',    0);
-ini_set('url_rewriter.tags',        '');
+ini_set('session.use_trans_sid', 0);
+ini_set('url_rewriter.tags', '');
 
 /**
  * If you encounter a situation where users post a large amount of text, and
@@ -174,8 +174,8 @@ ini_set('url_rewriter.tags',        '');
  * and increase the limits of these variables. For more information, see
  * http://php.net/manual/en/pcre.configuration.php.
  */
-# ini_set('pcre.backtrack_limit', 200000);
-# ini_set('pcre.recursion_limit', 200000);
+// ini_set('pcre.backtrack_limit', 200000);
+// ini_set('pcre.recursion_limit', 200000);
 
 /**
  * Drupal automatically generates a unique session cookie name for each site
@@ -185,10 +185,10 @@ ini_set('url_rewriter.tags',        '');
  * shared base domain. Doing so assures that users remain logged in as they
  * cross between your various domains.
  */
-# $cookie_domain = 'example.com';
+// $cookie_domain = 'example.com';
 
 /**
- * Variable overrides:
+ * Variable overrides:.
  *
  * To override specific entries in the 'variable' table for this site,
  * set them here. You usually don't need to use this feature. This is
@@ -200,10 +200,10 @@ ini_set('url_rewriter.tags',        '');
  *
  * Remove the leading hash signs to enable.
  */
-# $conf = array(
-#   'site_name' => 'My Drupal site',
-#   'theme_default' => 'minnelli',
-#   'anonymous' => 'Visitor',
+// $conf = array(
+//   'site_name' => 'My Drupal site',
+//   'theme_default' => 'minnelli',
+//   'anonymous' => 'Visitor',
 /**
  * A custom theme can be set for the off-line page. This applies when the site
  * is explicitly set to off-line mode through the administration page or when
@@ -212,7 +212,7 @@ ini_set('url_rewriter.tags',        '');
  * theme. It is located inside 'modules/system/maintenance-page.tpl.php'.
  * Note: This setting does not apply to installation and update pages.
  */
-#   'maintenance_theme' => 'minnelli',
+//   'maintenance_theme' => 'minnelli',
 /**
  * reverse_proxy accepts a boolean value.
  *
@@ -229,7 +229,7 @@ ini_set('url_rewriter.tags',        '');
  * about this setting, do not have a reverse proxy, or Drupal operates in
  * a shared hosting environment, this setting should be set to disabled.
  */
-#   'reverse_proxy' => TRUE,
+//   'reverse_proxy' => TRUE,
 /**
  * reverse_proxy accepts an array of IP addresses.
  *
@@ -240,11 +240,11 @@ ini_set('url_rewriter.tags',        '');
  * reverse proxies. Otherwise, the client could directly connect to
  * your web server spoofing the X-Forwarded-For headers.
  */
-#   'reverse_proxy_addresses' => array('a.b.c.d', ...),
-# );
+//   'reverse_proxy_addresses' => array('a.b.c.d', ...),
+// );
 
 /**
- * String overrides:
+ * String overrides:.
  *
  * To override specific strings on your site with or without enabling locale
  * module, add an entry to this list. This functionality allows you to change
@@ -252,7 +252,7 @@ ini_set('url_rewriter.tags',        '');
  *
  * Remove the leading hash signs to enable.
  */
-# $conf['locale_custom_strings_en'] = array(
-#   'forum'      => 'Discussion board',
-#   '@count min' => '@count minutes',
-# );
+// $conf['locale_custom_strings_en'] = array(
+//   'forum'      => 'Discussion board',
+//   '@count min' => '@count minutes',
+// );
